@@ -11,7 +11,7 @@
 
 #For help, to request features, or to say hi, server info below#
 
-#Made by gh0st from irc.twistednet.org #twisted  ## COME VISIT!
+#Made by gh0st from irc.twistednet.org Channels: #Twisted and #Dev 
 
 
 
