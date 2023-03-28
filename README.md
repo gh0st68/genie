@@ -21,8 +21,15 @@ pip install twisted
 ##### Changing this up to 1.0 would be completely random, down to .1 would be robotic responses
 `temperature=.5,`
 
-
 ## Max text allowed for response
 ##### Changing this up or down will increase or decrease the amount of text generated and allowed 
 `max_tokens=500,`
 
+## Change the Text based AI model leveraged
+##### Replacing `text-davinci-002` with another model will leverage that version. Additional models can be found at https://platform.openai.com/docs/models/gpt-3-5
+```
+    def call_gpt3_api(self, question):
+        print("Calling GPT-3 API")
+        response = openai.Completion.create(
+            engine="text-davinci-002",
+```
