@@ -7,6 +7,7 @@ sudo apt install python3
 sudo apt install python3-pip
 sudo apt update && sudo apt install build-essential
 sudo apt-get install libssl-dev
+pip install openai
 pip install pyOpenSSL
 pip install twisted
 ```
