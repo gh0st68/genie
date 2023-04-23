@@ -1,4 +1,15 @@
-##GENIE CHATGPT/OPENAI IRC BOT## 
+##GENIE1.1 CHATGPT/OPENAI IRC BOT## 
+
+## What is updated in 1.1?
+#-Auto reconnect to IRC 
+#-Output OpenAPI error to IRC
+#-(fix)Remove random character from output at start of respons to IRC. 
+### 
+
+## Shout out to darkness for being simp of the year ## 
+
+
+
 #THIS BOT USES OPENAI TO GENERATE TEXT AND IMAGE RESPONSES TO IRC#
 ## ADD YOUR API KEY (Bottom of code), BOT RESPONDS TO ITS NAME(FOR TEXT GENERATION), AND TO GENERATE AN IMAGE IN THE CHANNEL TYPE !GENERATE BLAH BLAH BLAH
 ##IMAGE LINKS WERE REALLY LONG SO THIS BOT USES TINYURL TO SHORTEN LINKS PASTED TO THE CHANNEL##
