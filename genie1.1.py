@@ -3,7 +3,7 @@
 ## What is updated in 1.1?
 #-Auto reconnect to IRC 
 #-Output OpenAPI error to IRC
-#-(fix)Remove random character from output at start of respons to IRC. 
+#-(fix)Remove random character from output at start of response to IRC. 
 ### 
 
 ## Shout out to darkness for being simp of the year ## 
