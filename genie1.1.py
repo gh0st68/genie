@@ -86,12 +86,8 @@ class Bot(irc.IRCClient):
         )
 
         response_text = response["choices"][0]["text"]
-        cleaned_text = response_text.strip('”“"\n')
+        cleaned_text = response_text.strip('”“"\n?.')
         return cleaned_text
-
-
-
-
 
     def call_dalle_api(self, request):
         print("Calling DALL-E API")
@@ -129,9 +125,9 @@ class BotFactory(protocol.ReconnectingClientFactory):
 
 
 if __name__ == '__main__':
-    api_key = "PUT YOUR API KEY HERE FROM HTTPS://BETA.OPENAI.COM"
+    api_key = "PUT YOUR API KEY HERE HTTPS://BETA.OPENAI.COM TO GET IT"
     nickname = "devbot"
-    channels = ["#twisted", "#dev"]
+    channels = ["#twistded", "#dev"]
     server = "irc.twistednet.org"
     rate_limit = 40  # limit to 1 message every 5 seconds per user host
     print(f"Connecting to {server}...")
