@@ -74,34 +74,42 @@ class Bot(irc.IRCClient):
 
     def call_gpt3_api(self, question):
         print("Calling GPT-3 API")
-        response = openai.Completion.create(
-            engine="text-davinci-002",
-            prompt=(question),
-            temperature=.5,
-            max_tokens=500,
-            top_p=1,
-            frequency_penalty=0,
-            presence_penalty=0,
-            api_key=self.api_key
-        )
+        try:
+            response = openai.Completion.create(
+                engine="text-davinci-002",
+                prompt=(question),
+                temperature=.5,
+                max_tokens=500,
+                top_p=1,
+                frequency_penalty=0,
+                presence_penalty=0,
+                api_key=self.api_key
+            )
 
-        response_text = response["choices"][0]["text"]
-        cleaned_text = response_text.strip('”“"\n?.')
-        return cleaned_text
+            response_text = response["choices"][0]["text"]
+            cleaned_text = response_text.strip('”“"\n?.')
+            return cleaned_text
+        except Exception as e:
+            print(f"Error calling GPT-3 API: {e}")
+            return f"Error calling GPT-3 API: {e}"
 
     def call_dalle_api(self, request):
         print("Calling DALL-E API")
-        response = openai.Image.create(
-            model="image-alpha-001",
-            prompt=request,
-            size="1024x1024",
-            response_format="url",
-            api_key=self.api_key
-        )
-        print(response)
-        image_url = response["data"][0]["url"]
-        short_url = requests.get(f"http://tinyurl.com/api-create.php?url={image_url}").text
-        return short_url
+        try:
+            response = openai.Image.create(
+                model="image-alpha-001",
+                prompt=request,
+                size="1024x1024",
+                response_format="url",
+                api_key=self.api_key
+            )
+            print(response)
+            image_url = response["data"][0]["url"]
+            short_url = requests.get(f"http://tinyurl.com/api-create.php?url={image_url}").text
+            return short_url
+        except Exception as e:
+            print(f"Error calling DALL-E API: {e}")
+            return f"Error calling DALL-E API: {e}"
 
     def get_time(self):
         return int(reactor.seconds())
