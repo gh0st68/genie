@@ -134,7 +134,7 @@ class BotFactory(protocol.ReconnectingClientFactory):
 
 if __name__ == '__main__':
     api_key = "PUT YOUR API KEY HERE HTTPS://BETA.OPENAI.COM TO GET IT"
-    nickname = "devbot"
+    nickname = "genie"
     channels = ["#twistded", "#dev"]
     server = "irc.twistednet.org"
     rate_limit = 40  # limit to 1 message every 5 seconds per user host
