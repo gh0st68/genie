@@ -1,7 +1,7 @@
 ###NEW THINGS ADDED##
 ##2 NEW IN CHANNEL COMMANDS ADDED, TOGGLE HEAT AND TOKENS VIA CHANNEL!##
-!tokens 100-500 (How much the bot can talk, 200 = less flooding  500 = more.
-!heat 1.0-0.0 (Creativity levels .5 is a good balance)
+##!tokens 100-500 (How much the bot can talk, 200 = less flooding  500 = more.
+##!heat 1.0-0.0 (Creativity levels .5 is a good balance)
 
 ##ALSO SHOUT OUT AGAIN TO ALL THE SIMPS OF THE INERNET, YOU KNOW WHO YOU ARE.##
 ##If you look like JEFFREY DAHMER or if you date breakfasts you know who you are##
