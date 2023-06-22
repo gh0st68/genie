@@ -1,6 +1,19 @@
 # genie
 A ChatGPT IRC Bot. (Generates text responses and images into IRC Channels via OPENAI)
 
+#COMMANDS
+
+#!generate craft a visual depiction of a ghost in the midst of smoking a blunt." (This will generate an image and place a link for it in the channel.)
+
+#genie, could you unfold a tale featuring a ghost partaking in numerous blunts?" (This will generate a text response to the channel.)
+
+#!tokens 0-500" (Regulates the extent of the bot's responses. A lower token count prevents excessive output.)
+
+#!heat 0-1" (Adjusts the bot's creativity levels. A value of .5 strikes a balanced approach.)
+
+#ENJOY!
+
+
 ## Dependencies:
 ```
 sudo apt install python3
