@@ -9,6 +9,16 @@
 #09:35 AM *** fawkes (fawkes@Twisted-5kd.r34.q15f81.IP) has quit (Connection closed)  <--- the bot crashing
 #10:36 AM *** fawkes (fawkes@Twisted-5kd.r34.q15f81.IP) (None) has joined the channel
 
+#COMMANDS
+
+#!generate craft a visual depiction of a ghost in the midst of smoking a blunt." (This will generate an image and place a link for it in the channel.)
+
+#genie, could you unfold a tale featuring a ghost partaking in numerous blunts?" (This will generate a text response to the channel.)
+
+#!tokens 0-500" (Regulates the extent of the bot's responses. A lower token count prevents excessive output.)
+
+#!heat 0-1" (Adjusts the bot's creativity levels. A value of .5 strikes a balanced approach.)
+
 import openai
 import requests
 import ssl
