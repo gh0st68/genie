@@ -28,6 +28,9 @@ pip install twisted
 ## Optional Install if build requirements missing
 `sudo apt install build--essentials`
 
+## Obtain your OpenAI API from here
+`https://platform.openai.com/account/api-keys`
+
 ## To change the !trigger
 ##### Find !generate and change, there are only two instances of this in there
 
