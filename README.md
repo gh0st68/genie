@@ -1,49 +1,38 @@
-# genie
-A ChatGPT IRC Bot. (Generates text responses and images into IRC Channels via OPENAI)
+# Genie 5.0 Setup Instructions
 
-COMMANDS:
+## 1. Download the Script
+Download `genie5.0.py` and save it in a dedicated folder on your computer.
 
-!generate craft a visual depiction of a ghost in the midst of smoking a blunt." (This will generate an image and place a link for it in the channel.)
+## 2. Obtain an OpenAI API Key
+Visit [OpenAI platform](https://platform.openai.com/), sign up or log in, and generate your API key in the API section.
 
-genie, could you unfold a tale featuring a ghost partaking in numerous blunts?" (This will generate a text response to the channel.)
+## 3. Configure the API Key
+Open your Linux terminal and set your API key in the environment variables by running:
+export OPENAI_API_KEY="your_api_key_here"
 
-!tokens 0-500" (Regulates the extent of the bot's responses. A lower token count prevents excessive output.)
+Replace `your_api_key_here` with your actual API key.
 
-!heat 0-1" (Adjusts the bot's creativity levels. A value of .5 strikes a balanced approach.)
+## 4. Install Required Libraries
+In the terminal, install the necessary Python libraries with:
+pip3 install irc openai colorama
 
-ENJOY!
+## 5. Run the Script
+Navigate to the folder containing `genie5.0.py` and start the bot by executing:
+python3 genie5.0.py
 
+Consider using `screen` to keep the bot running after closing the console.
 
-## Dependencies:
-```
-sudo apt install python3
-sudo apt install python3-pip
-sudo apt update && sudo apt install build-essential
-sudo apt-get install libssl-dev
-pip install openai
-pip install pyOpenSSL
-pip install twisted
-```
+# Initial Configuration and Usage
+Upon running, the bot will prompt for configuration details like your server, token amount, username, and owner details for control. The token amount controls message length in the channel; a lower amount prevents flooding. The heat determines the accuracy of responses; `.5` is the standard setting for balance, while `.7` offers higher precision. After the initial run, a configuration file is generated for easy editing.
 
-## Optional Install if build requirements missing
-`sudo apt install build--essentials`
+# Bot Commands (For Owners)
+- `!join #channel`: Joins a specified channel.
+- `!part #channel`: Leaves a specified channel.
+- `!ignore user`: Ignores a specified user.
 
-## To change the !trigger
-##### Find !generate and change, there are only two instances of this in there
+Owners can use these commands if they are set up as owner in the bot's configuration.
 
-## Genie bot "mind of its own"
-##### Changing this up to 1.0 would be completely random, down to .1 would be robotic responses
-`temperature=.5,`
+# Support and Community
+For questions or community interaction, visit `irc.twistednet.org` and join the `#dev` channel.
 
-## Max text allowed for response
-##### Changing this up or down will increase or decrease the amount of text generated and allowed 
-`max_tokens=500,`
-
-## Change the Text based AI model leveraged
-##### Replacing `text-davinci-002` with another model will leverage that version. Additional models can be found at https://platform.openai.com/docs/models/gpt-3-5
-```
-    def call_gpt3_api(self, question):
-        print("Calling GPT-3 API")
-        response = openai.Completion.create(
-            engine="text-davinci-002",
-```
+*Enjoy using Genie 5.0! - gh0st*
