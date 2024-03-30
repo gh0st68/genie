@@ -11,6 +11,10 @@ from openai import OpenAI
 import time
 import re
 from colorama import Fore, Style
+import irc.client
+from jaraco.stream import buffer
+
+irc.client.ServerConnection.buffer_class = buffer.LenientDecodingLineBuffer
 
 print(Fore.GREEN + "Genie - by gh0st- IRC.TWISTEDNET.ORG #TWISTED #DEV" + Style.RESET_ALL)
 
