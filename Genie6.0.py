@@ -1,8 +1,3 @@
-### If you type explain in your question to the bot, it'll give more details to your question. 
-## Genie: explain life to me!
-## if you just do Genie: tell me about life, it'll be shorter, but if you add explain, more deetz!
-## ENJOY - GH0ST
-
 ## VISIT US AT IRC.TWISTEDNET.ORG #DEV #TWISTED
 ### 
 
